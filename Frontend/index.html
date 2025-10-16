@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CHIT CHAT</title>
+    <link rel="stylesheet" href="">
+    
+    <style>
+    @font-face {
+        font-family: myFont; /* set name */
+        src: url('/Fonts/Rubik/Rubik-VariableFont_wght.ttf'); /* url of the font */
+
+    }
+    body {
+     margin: 0;
+    height: 100vh; /* Full viewport height */
+    display: flex; /* Makes body a flex container */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    background-image: url('banner.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Keeps background fixed during scroll */
+    font-family: myFont;
+  }
+
+  .btn {
+  border: none;
+  background-color: inherit;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+}
+.main {
+    background-color: white;
+    padding: 80px;
+}
+
+.forgot-password {
+      text-align: right;
+      float: right;
+      font-size: 12px
+    }
+    .login {
+      text-align: center;
+      float: center;
+      font-size: 15px;
+      
+    }
+
+   </style>
+</head>
+
+<body>
+    <div class="main">
+        <img src="/Assets/logo.png" width="250" height="60">
+        <h3>Hello Everyone, We are ChitChat</h3>
+        <h5>Welcome to chitchat please, login to your account</h5>
+
+        <form action="">
+            <label for="email">
+                Email Address
+            </label>
+            <br>
+            <input type="text" id="email" name="email" 
+                placeholder="Demo@123gmail.com" required
+                style="color: black; padding: 10px 20px; "
+                >
+            <br><br>
+            <label for="password">
+                Password
+            </label>
+            <br>
+            <input type="password" id="password" name="password" 
+            style="color: black; padding: 10px 20px; "
+                placeholder="Password" required>
+
+                <br><br>
+            
+        <input type="checkbox" id="rememberMe" name="rememberMe">
+        <label for="rememberMe" 
+        style="font-size: 13px;">Remember me</label>
+            <span class="forgot-password">
+          <a href="no-javascript1.html" title="Forgot Password" id="link-reset">Forgot Password?</a>
+        </span>
+
+        <br><br>
+            <div class="login">
+                <button type="submit" 
+                style="background-color: lightblue; color: white; padding: 10px 20px; border: none; "
+                >
+                    Login
+                </button>
+            </div>
+            
+        </form>
+        
+        
+    </div>
+</body>
+
+</html>
